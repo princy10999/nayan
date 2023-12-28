@@ -1,0 +1,39 @@
+.smedia {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    li {
+        & + li {
+            margin-left: 33px;
+        }
+    }
+}
+
+.contact-us-container {
+    display: flex;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .mail-icon {
+            margin-right: 7px;
+        }
+        .phone-icon {
+            margin-right: 7px;
+        }
+        .location-icon {
+            margin-right: 5px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+
+        .content {
+            width: 100%;
+        }
+    }
+}

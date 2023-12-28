@@ -1,0 +1,49 @@
+.action_items{
+    position: absolute;
+    top: 100%;
+    background-color: #FAFCFF;
+    padding: 30px 22px;
+    border-radius: 10px;
+    border: 1px solid #B9B9B9;
+    width: 181px;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s all ease-in-out;
+    &.active{
+      opacity: 1;
+      pointer-events: all;
+    }
+    h3{
+      font-size: 18px;
+      line-height: 1;
+      color: #525252;
+      margin: 0;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    ul{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      li{
+        width: 100%;
+        position: relative;
+        margin-bottom: 5px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        button{
+          font-size: 14px;
+          line-height: 1;
+          padding: 0;
+          margin: 0;
+          border: none;
+          font-weight: 400;
+          text-align: left;
+          background-color: transparent;
+          color: #2F3838;
+        }
+      }
+    }
+  }

@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.gmnoprint button {
+  overflow: visible !important;
+  /* top: 20px !important;
+  left: 20px !important; */
+}
+
+.rangeslider-horizontal .rangeslider__handle:after {
+  display: none !important;
+}
+
+.billBoard___custom__name {
+  top: 40px !important;
+}
+
+.up__arrow {
+  transform: rotate(45deg) !important;
+}
+
+.icon__rotate {
+  transform: rotate(180deg);
+}
+
+#search__bill__scroll::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f5;
+  display: none;
+}
+
+#search__bill__scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #0d6efd;
+  /* display: block !important; */
+  display: none;
+}
+
+.blur-layer {
+  filter: blur(15px);
+}

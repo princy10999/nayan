@@ -1,0 +1,232 @@
+*{
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+body,html{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: "HelveticaNeue";
+  font-weight: 400;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+select,
+option,
+textarea,   
+input{
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+button{
+cursor: pointer;
+}
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../../assets/other/icomoon.eot?3o7vky ');
+  src:  url('../../../assets/other/icomoon.eot?3o7vky #iefix') format('embedded-opentype'),
+    url('../../../assets/other/icomoon.ttf?3o7vky ') format('truetype'),
+    url('../../../assets/other/icomoon.woff?3o7vky ') format('woff'),
+    url('../../../assets/other/icomoon.svg?3o7vky #icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\e900";
+  color: #f73759;
+}
+.icon-comment:before {
+  content: "\e901";
+}
+.icon-download:before {
+  content: "\e902";
+}
+.icon-share:before {
+  content: "\e903";
+}
+.icon-smile:before {
+  content: "\e904";
+}
+.icon-carret-arw:before {
+  content: "\e905";
+  color: #a2a2a2;
+}
+.icon-map:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-share1:before {
+  content: "\e907";
+}
+.icon-back-arw:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-list:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-filter:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-filter1:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-list1:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-direction:before {
+  content: "\e911";
+  color: #017afb;
+}
+.icon-message:before {
+  content: "\e912";
+}
+.icon-arrow-bottom:before {
+  content: "\e90d";
+}
+.icon-arrow-right:before {
+  content: "\e90e";
+  color: #0079ff;
+}
+.icon-camera:before {
+  content: "\e90f";
+  color: #fff;
+}
+.icon-map-01:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-map-02:before {
+  content: "\e915";
+  color: #0276f2;
+}
+.icon-map-03:before {
+  content: "\e916";
+}
+.icon-map-04:before {
+  content: "\e917";
+  color: #0276f2;
+}
+.icon-map-05:before {
+  content: "\e918";
+  color: #ffc311;
+}
+.icon-map-06:before {
+  content: "\e919";
+  color: #0276f2;
+}
+.icon-map-07:before {
+  content: "\e913";
+  color: #0276f2;
+}
+.icon-map-08:before {
+  content: "\e914";
+  color: #0276f2;
+}
+.icon-map1 .path1:before {
+  content: "\e91a";
+  color: rgb(0, 0, 0);
+}
+.icon-map1 .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-map1 .path3:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-map1 .path4:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-search:before {
+  content: "\e91e";
+  color: #fff;
+}
+.icon-send:before {
+  content: "\e91f";
+  color: #fff;
+}
+.icon-photo-camera:before {
+  content: "\e920";
+  color: #fff;
+}
+.icon-collection:before {
+  content: "\e921";
+  color: #f73759;
+}
+.icon-download1:before {
+  content: "\e922";
+}
+
+
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url('../../../assets/other/UntitledSans-Bold.woff2') format('woff2'),
+      url('../../../assets/other/UntitledSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../../../assets/other/HelveticaNeueMedium.woff2') format('woff2'),
+      url('../../../assets/other/HelveticaNeueMedium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../../../assets/other/HelveticaNeueBold.woff2') format('woff2'),
+      url('../../../assets/other/HelveticaNeueBold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../../../assets/other/HelveticaNeue.woff2') format('woff2'),
+      url('../../../assets/other/HelveticaNeue.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+

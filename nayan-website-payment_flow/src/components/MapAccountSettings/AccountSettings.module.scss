@@ -1,0 +1,25 @@
+:global(.profile__dots):after {
+    content: '\2807';
+    font-size: 35px;
+    margin-left: 8px;
+    @media (max-width: 1199px) {
+        font-size: 28px;
+    }
+}
+:global(.smedia_mble) {
+    padding-top: 10px !important;
+    ul {
+        justify-content: flex-start;
+        li {
+            padding-top: 0;
+            padding-bottom: 0;
+            a {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+            &+li {
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+$font-family: "HelveticaNeue";
+/* Variables */
+$white: #FFFFFF;
+$black: #000000;
+$font: 'Ubuntu', sans-serif !important;
+$font-family-alt: 'Roboto', sans-serif !important;
+/* Variables */
+
+
+.card_body {
+    padding: 0 !important;
+}
+
+.itemsList {
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+        @media (min-width: 1400px) {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        &>* {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            @media (min-width: 1400px) {
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            @media (max-width: 767.98px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .itemwrap {
+        cursor: pointer;
+        background-color: $white;
+        max-width: 350px;
+        @media (max-width:767.98px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .imgsec {
+            margin: auto;
+            line-height: 0;
+            max-width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
+        .itemcnt {
+            border: 1px solid #EEEEEE;
+            border-width: 0 1px 1px;
+            padding: 20px 20px;
+            min-height: 180px;
+            @media (min-width: 992px) {
+                min-height: 200px;
+            }
+            @media (min-width: 1200px) {
+                min-height: 220px;
+                padding: 30px 20px;
+            }
+            @media (min-width: 1800px) {
+                min-height: 240px;
+            }
+            .titlesec {
+                font-weight: 700;
+                line-height: 1.2;
+                color: #2E2D26;
+                font-size: 21px;
+                padding-bottom: 10px;
+                font-family: $font;
+                @media (min-width: 1200px) {
+                    font-size: 22px;
+                    padding-bottom: 15px;
+                }
+                @media (min-width: 1800px) {
+                    font-size: 24px;
+                    padding-bottom: 22px;
+                }
+            }
+            p {
+                font-size: 18px;
+                color: #2E2D26;
+                font-family: $font-family;
+                opacity: .5;
+                line-height: 1.35;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.popup_wrapper{
+    width: 60%;
+}
+.close_button{
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    right: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.payment_modal{
+    .login_inner {
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,152 @@
+body a {
+    text-decoration: none;
+}
+input:focus,
+input:focus-visible,
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.modal {
+    z-index: 999999 !important;
+}
+.modal-backdrop {
+    z-index: 999999 !important;
+}
+body {
+    font-family: "HelveticaNeue" !important;
+}
+
+/* Variables */
+/* Variables */
+/* Common grid start*/
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 480px !important;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px !important;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px !important;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 932px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px !important;
+    }
+}
+@media (min-width: 1800px) {
+    .container {
+        max-width: 1560px !important;
+    }
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+.row > * {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* .btn.btn-primary:focus,
+.btn.btn-primary:focus-visible,
+.btn.btn-primary:hover{
+    background-color: transparent !important;
+} */
+.filterbtns {
+    max-width: 177px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #393939;
+    border-radius: 14px;
+    overflow: hidden;
+    margin: auto auto 15px;
+    width: 100%;
+    /* min-height: 41px; */
+}
+@media (min-width: 768px) {
+    .filterbtns {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .filterbtns {
+        margin: auto auto 4px;
+    }
+}
+
+.filterbtns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 10px;
+    flex-basis: 50%;
+    max-width: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+.filterbtns button:hover {
+    background-color: #262626;
+}
+.filterbtns button [class^="icon-"],
+.filterbtns button [class*=" icon-"] {
+    margin-right: 4px;
+}
+.filterbtns button + button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 20px);
+    background-color: #ffffff;
+    left: -0.5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-backdrop {
+    background-color: #414141 !important;
+}
+.modal-backdrop.show {
+    opacity: 0.91 !important;
+}
+.icon-collection {
+    cursor: pointer;
+}
+
+.welcome-banner-modal-container .MuiDialog-container .MuiPaper-root{
+    max-width: 1700px;
+    width: 100%;
+}

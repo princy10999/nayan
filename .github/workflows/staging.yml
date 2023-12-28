@@ -1,0 +1,38 @@
+name: Nayan v2 website | STAGING
+
+on:
+  push:
+    branches: 
+      - staging
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: npm install
+      - run: npm run build
+        env:
+          REACT_APP_API_URL: 'https://c3-v2-prod.nayan.co'
+          CI: false
+          REACT_APP_GOOGLE_MAP_KEY: ${{ secrets.GOOGLE_MAP_KEY }}
+      - name: Remove previous version
+        run: sudo rm -rf /var/www/html/nayan-v2-staging/*
+      - name: Move source folder to nginx direc
+        run: sudo cp -r ./build/* /var/www/html/nayan-v2-staging/

@@ -1,0 +1,363 @@
+
+$font-family-alt: "Roboto", sans-serif !important;
+// @font-face {
+//     font-family: 'Ethnocentric';
+//     src: url('../../src/assets/other/fonts/EthnocentricRg-Regular.eot');
+//     src: url('../../src/assets/other/fonts/EthnocentricRg-Regular.eot?#iefix') format('embedded-opentype'),
+//         url('../../src/assets/other/fonts/EthnocentricRg-Regular.woff2') format('woff2'),
+//         url('../../src/assets/other/fonts/EthnocentricRg-Regular.woff') format('woff'),
+//         url('../../src/assets/other/fonts/EthnocentricRg-Regular.ttf') format('truetype'),
+//         url('../../src/assets/other/fonts/EthnocentricRg-Regular.svg#EthnocentricRg-Regular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
+.welcome-banner-modal-container {
+    .modal-header {
+        display: flex;
+       justify-content: end;
+
+        .cross-icon:hover {
+            cursor: pointer;
+        }
+    }
+
+    .modal-section {
+        padding: 10px;
+
+        &.text-section {
+            display: flex;
+            flex-direction: column;
+
+            .text {
+                // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                 font-family: 'Ethnocentric';
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.5;
+                letter-spacing: 0.00938em;
+                color: rgba(0, 0, 0, 0.6);
+
+                .primary {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+
+                .note {
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                }
+
+                .link {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &.video-section {
+            
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            min-height: 420px;
+            @media only screen and (max-width: 575px) {
+                min-height: 365px;
+            }
+
+        }
+    }
+   
+}
+
+/* ------------------   */
+.welcome-banner-modal-container{
+    font-family: $font-family-alt;
+    .title{
+        color:#000;
+        font-weight: 800;
+        font-size: 32px;
+        text-transform: capitalize;
+        // font-weight: 400;  
+        //  font-family: 'Ethnocentric';  
+         @media only screen and (max-width: 1500px) {
+            font-size: 26px
+        }
+         @media only screen and (max-width: 992px) {
+            font-size: 22px;
+        }
+      }
+  
+    .text1{
+        color: #000;
+        font-size:22px;
+        font-weight: 400;
+         text-transform: capitalize;
+        font-family: 'Ethnocentric';
+        @media only screen and (max-width: 1500px) {
+          font-size: 21px;
+            margin-bottom: 0;
+        }
+         @media only screen and (max-width: 992px) {
+            font-size: 13px
+        }
+    }
+    .text2{
+        color: #404040;
+        font-size: 16px;
+        line-height: 1.4;
+        max-width:500px ;
+        font-weight: 500;
+        margin: 0 auto;
+        text-transform: capitalize;
+        font-family:  "Roboto", sans-serif !important;
+          @media only screen and (max-width: 1500px) {
+           font-size:16px;
+            margin-bottom: 0px;
+        }
+           @media only screen and (max-width: 992px) {
+            font-size: 13px;
+           
+        }
+    }
+    .text3{
+         color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+         text-transform: capitalize;
+          font-family: 'Ethnocentric';
+           @media only screen and (max-width: 1500px) {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+         @media only screen and (max-width: 992px) {
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    }
+    .text4{
+         color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+         text-transform: capitalize;
+        font-family: 'Ethnocentric';
+        padding: 0 21px;
+         @media only screen and (max-width: 992px) {
+            font-size: 13px;
+             padding: 0 0px;
+             margin-bottom: 0;
+        }
+
+    }
+    .model_left_img{
+        background-image: url(../assets/images/landing-page/fleet-landing.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height:100%;
+        text-align: center;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 430px;
+
+
+        .button{
+            background-color: #0079fe;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            border-radius: 8px;
+            // margin-right: 15px;
+            @media only screen and (max-width: 992px) {
+                font-size:16px;            
+            }
+             @media only screen and (max-width: 480px) {
+                font-size:10px;            
+            }
+        }
+    }
+   
+    .model_leftt_text {
+        padding-top: 20px;
+    }
+    .lernmore_btn{
+        justify-content: center;
+        // padding-top:315px;
+        // padding-top:16.3vw;
+        text-align: center;
+        margin: 0 auto;
+        
+        padding-bottom: 15px;
+        margin-top: auto;
+        @media only screen and (max-width:1499px) {
+            padding-bottom: 15px;
+            }
+        //  @media only screen and (max-width:1499px) {
+        //          padding-top:174px;
+        // } 
+        //  @media only screen and (max-width:1024px) {
+        //          padding-top:128px;
+        // }   
+        //  @media only screen and (max-width:991px) {
+        //          padding-top:228px;
+        // }    
+        //    @media only screen and (max-width:576px) {
+        //       padding-top: 0;
+        //       padding-bottom: 11px;
+        // }      
+        div{
+            +div{
+                margin-left: 20px;
+            }
+        }  
+        img{
+            max-width: 220px;
+            width: 100%;
+             @media only screen and (max-width:1499px) {
+                max-width: 190px;
+                }
+             @media only screen and (max-width:1024px) {
+                max-width: 180px;
+                }
+        }
+    }
+     .model_right_img{
+        background-image: url(../assets/images/landing-page/traffic-landing.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+        text-align: center;
+        max-width: 100%;
+        .model_leftt_text{
+            .title{
+                color: #000;
+                // font-size: 44px;
+                font-weight: 800;
+                font-size: 32px;
+                // font-family: "Roboto", sans-serif !important;
+                //  @media only screen and (max-width: 1500px) {
+                //     font-size: 38px;
+                // }
+                @media only screen and (max-width: 1500px) {
+                    font-size: 26px
+                }
+                 @media only screen and (max-width: 992px) {
+                    font-size: 22px;
+                }
+                 
+            }
+            .text1{
+                color: #404040;
+                font-size: 32px;
+                font-weight:700;
+                text-transform: capitalize;
+                font-family:  "Roboto", sans-serif !important;
+                @media only screen and (max-width: 1500px) {
+                    font-size:18px;
+                    margin-bottom: 0px;
+                }
+                 @media only screen and (max-width: 992px) {
+                    font-size: 22px;
+                    padding: 0 0;
+                }
+            }
+            .text2{
+                color: #404040;
+                font-size: 16px;
+                line-height: 1.4;
+                font-weight: 500;
+                max-width:500px ;
+                margin: 0 auto;
+                text-transform: capitalize;
+                font-family:  "Roboto", sans-serif !important;
+                  @media only screen and (max-width: 1500px) {
+                   font-size:16px;
+                    margin-bottom: 0px;
+                }
+                   @media only screen and (max-width: 992px) {
+                    font-size: 13px;
+                   
+                }
+            }
+            .text3{
+               color: #404040;
+                font-size: 27px;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family:  "Roboto", sans-serif !important;
+                  @media only screen and (max-width: 1500px) {
+                  font-size:18px;
+                    margin-bottom: 0px;
+                }
+                   @media only screen and (max-width: 992px) {
+                    font-size: 13px;
+                   
+                }
+              }
+             .text4{
+                color: #404040;
+                font-size: 27px;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-family:  "Roboto", sans-serif !important;
+                padding: 0 0;
+                  @media only screen and (max-width: 1500px) {
+                   font-size:18px;
+                    margin-bottom: 0px;
+                }
+                   @media only screen and (max-width: 992px) {
+                    font-size: 13px;
+                   
+                }
+            }
+        }
+        .react-player {
+            opacity: 0.3;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            &.myStyle{
+                opacity: 1;
+            }
+        }
+        
+            .button{
+                background-color: #0079fe;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 700;
+                border-radius: 8px;
+                margin-right: 15px;
+                @media only screen and (max-width: 992px) {
+                    font-size:16px;            
+                }
+                 @media only screen and (max-width: 480px) {
+                    font-size:10px;            
+                }
+            }
+            .learn-more-button{
+                padding-top: 33px;
+                 @media only screen and (max-width:576px) {
+                   padding-top: 21px;            
+                }
+            }
+        
+    }
+}
+.welcome-banner-modal-container .css-1t1j96h-MuiPaper-root-MuiDialog-paper{
+    max-width: 1700px;
+    width: 100%;
+}
+#movie_player
+.ytp-title-channel{
+    display: none!important;
+}
+.ai_Banner_Btn{
+    cursor: pointer;
+}
+
